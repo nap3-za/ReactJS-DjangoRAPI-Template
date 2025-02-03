@@ -1,10 +1,8 @@
-
-import React from "react";
 import { BrowserRouter as Router } from "react-router-dom";
 
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
-import { loadUser, logout } from "./reduxApp/actions/authentication/actions";
+import { logout } from "./reduxApp/actions/authentication/actions";
 
 import AppRoutes from "./AppRoutes";
 
