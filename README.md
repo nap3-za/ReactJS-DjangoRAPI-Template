@@ -1,30 +1,51 @@
-# React + TypeScript + Vite
+# React Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
+This is a React.js template designed to work seamlessly with a Django REST Framework (DRF) backend. It includes preconfigured technologies and features to accelerate API development.
 
-Currently, two official plugins are available:
+## Features
+- **Vite + React + TypeScript**
+- **Tailwind CSS** for styling
+- **Redux Toolkit** for state management
+- **Pre-configured API Endpoints** using `AppEndpoints.jsx`
+- **Modular Routing** in `AppRoutes.jsx`
+- **Global Constants** in `Constants.jsx`
+- **Utility Functions** in `Utilities.js`
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: "latest",
-    sourceType: "module",
-    project: ["./tsconfig.json", "./tsconfig.node.json"],
-    tsconfigRootDir: __dirname,
-  },
-};
+## Folder Structure
+```
+react_app/
+│── src/
+│   ├── App.tsx
+│   ├── main.tsx
+│   ├── AppEndpoints.jsx  # API endpoint configurations
+│   ├── AppRoutes.jsx      # Routing structure
+│   ├── AppUrls.jsx        # API URL management
+│   ├── Constants.jsx      # Global constants
+│   ├── FieldChoices.jsx   # Field value mappings
+│   ├── Utilities.js       # Helper functions
+│   ├── assets/            # Static assets
+│   ├── components/        # Reusable UI components
+│   ├── pages/             # Page-level components
+│   ├── reduxApp/          # Redux state management
+│── tailwind.config.js      # Tailwind CSS configuration
+│── vite.config.ts          # Vite configuration
+│── tsconfig.json           # TypeScript configuration
+│── package.json            # Dependencies
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Pages Directory
+The `pages` directory contains key sections of the application, where the main functionality is implemented.
+- **account/**: Manages user account-related functionalities such as profile settings and preferences.
+- **authentication/**: Handles user authentication, including login, signup, and password reset features.
+- **misc/**: Contains miscellaneous pages that do not fit into the other categories, such as custom static pages or additional UI components.
+
+## Installation & Setup
+```sh
+# Install dependencies
+yarn install
+
+# Run the development server
+yarn dev
+```
+
