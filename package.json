@@ -1,7 +1,7 @@
 {
   "name": "flowbite-react-template-vite",
-  "homepage":"https://nap3-za.github.io/ReactJS-DjangoRAPI-Template/",
-  "private": false,
+  "homepage":".",
+  "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
