@@ -1,5 +1,6 @@
 {
   "name": "flowbite-react-template-vite",
+  "homepage":"https://nap3-za.github.io/ReactJS-DjangoRAPI-Template/",
   "private": false,
   "version": "0.0.0",
   "type": "module",
@@ -12,6 +13,9 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "typecheck": "tsc --noEmit",
+
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
 
     "build-tw": "npx tailwind -i src/index.css -o index.css -w"
   },
