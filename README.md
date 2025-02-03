@@ -1,7 +1,7 @@
 # Django REST API React Frontend
 
 ## Overview
-This is a React.js template designed to work seamlessly with the [Django REST Framework backend template](https://github.com/nap3-za/Django-FSA-Template). It includes preconfigured technologies and features to accelerate API development.
+This is a React.js template designed to work seamlessly with the [Django REST Framework backend template](https://github.com/nap3-za/Django-RAPI-Template). It includes preconfigured technologies and features to accelerate API development.
 
 ## Features
 - **Vite + React + TypeScript**
